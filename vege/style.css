@@ -21,6 +21,8 @@ středně široké obrazovky:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: ghostwhite;
+    font-size: 0.8rem;
 }
 
 .paticka {
@@ -37,3 +39,131 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+#hlavni {
+    background-image: url('images/salat.jpg');
+    background-color: lightgrey;
+    background-blend-mode: darken;
+    min-height: 200px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    border: 1px solid white;
+}
+
+#dva {
+    background-image: url("images/chlebicek.jpg");
+}
+
+#tri {
+    background-image: url("images/cizrna.jpg");
+}
+
+#ctyri {
+    background-image: url("images/tacos.jpg");
+    
+}
+
+#pet {
+    background-image: url("images/burger.jpg");
+
+}
+
+.recepty {
+    background-color: lightgrey;
+    background-blend-mode: darken;
+    min-height: 90px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    border: 1px solid white;
+}
+.salat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+}
+.nazev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+
+.druh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5rem;
+}
+
+.komentare {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width: 480px) {
+    #hlavni {
+        min-height: 250px;
+    }
+    .recepty {
+        min-height: 150px;
+        width: 50%;
+    }
+    .maly {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .salat {
+        font-size: 2rem;
+        margin: 1.25rem;
+    }
+    .nazev {
+        font-size: 1.5rem;
+        margin: 1.25rem;
+    }
+    
+    .druh {
+        margin: 1.25rem;
+    }
+
+    .komentare {
+        margin: 1.25rem;
+}
+}
+
+@media only screen and (min-width: 860px) {
+    #hlavni {
+        min-height: 400px;
+        width: 33%;
+    }
+    .recepty {
+        min-height: 200px;
+    }
+
+    .maly {
+        width: 66%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .salat {
+        font-size: 3rem;
+    }
+
+    .nazev {
+        font-size: 1.75rem;
+    }
+
+}
